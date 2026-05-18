@@ -27,15 +27,15 @@
                 $errors[] = "名前はひらがな、カタカナ、漢字、英字のみ使用できます。";
             }
 
-            if ($age !== "" && (!ctype_digit($age) || (int)$age < 0 || (int)$age > 150)) {
+            if ($age === "" && (!ctype_digit($age) || (int)$age < 0 || (int)$age > 150)) {
                 $errors[] = "年齢は0から150の間で入力してください。";
             }
 
-            if ($phone !== "" && !preg_match('/^[0-9-]+$/', $phone)) {
+            if ($phone === "" && !preg_match('/^[0-9-]+$/', $phone)) {
                 $errors[] = "電話番号は半角数字とハイフンのみ使用できます。";
             }
 
-            if ($address !== "" && !preg_match('/^[ぁ-んァ-ヶー一-龠a-zA-Z0-9-]+$/u', $address)) {
+            if ($address === "" && !preg_match('/^[ぁ-んァ-ヶー一-龠a-zA-Z0-9-]+$/u', $address)) {
                 $errors[] = "住所はひらがな、カタカナ、漢字、英字、半角数字、ハイフンのみ使用できます。";
             }
 

@@ -23,7 +23,7 @@
             <label for="address">住所：</label>
             <input type="text" id="address" name="address"><br><br>
 
-            <label for="question">質問：</label><br>
+            <label for="question">質問：</label>
             <textarea id="question" name="question" rows="5" cols="40" required></textarea><br><br>
 
             <label for="gender">性別：</label>
