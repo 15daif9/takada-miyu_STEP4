@@ -16,19 +16,20 @@ body {
   }
   label {
     display: block;
-    margin-bottom: 6px;
   }
   input[type="text"],
   input[type="email"],
+  input[type="number"],
+  input[type="tel"],
   textarea,
   select {
-      width: 100%;
+      width: 90%;
       padding: 8px;
       margin-bottom: 12px;
   
   }
   button {
-    align-items: left;
+    text-align: left;
     padding: 10px 20px;
     background-color: #0053ba;
     cursor: pointer;
